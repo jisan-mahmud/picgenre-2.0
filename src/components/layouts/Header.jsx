@@ -17,7 +17,7 @@ export default function Header() {
                         <a className="text-sm font-medium hover:text-primary transition-colors" href="#">Features</a>
                         <a className="text-sm font-medium hover:text-primary transition-colors" href="#">Documentation</a>
                         <Link to="/pricing" className="text-sm font-medium hover:text-primary transition-colors">Pricing</Link>
-                        <a className="text-sm font-medium hover:text-primary transition-colors" href="#">Changelog</a>
+                        <Link to="/shop" className="text-sm font-medium hover:text-primary transition-colors">Shop</Link>
                     </nav>
                     <div className="flex items-center gap-3">
                         <button 
