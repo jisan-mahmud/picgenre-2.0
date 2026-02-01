@@ -14,10 +14,10 @@ export default function Shop() {
                         </p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 hover:border-slate-300 dark:hover:border-white/20 flex flex-col rounded-3xl p-8 transition-all">
+                        <div className="border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/40 hover:bg-slate-50 dark:hover:bg-slate-900 flex flex-col rounded-3xl p-8 transition-all group">
                             <div className="mb-8 flex justify-center">
-                                <div className="size-24 rounded-2xl flex items-center justify-center relative bg-primary/10 border border-primary/20">
-                                    <span className="material-symbols-outlined text-5xl text-primary opacity-80">palette</span>
+                                <div className="size-24 rounded-2xl flex items-center justify-center relative bg-primary/10 border border-primary/20 group-hover:bg-primary group-hover:text-white transition-all">
+                                    <span className="material-symbols-outlined text-5xl text-primary opacity-80 group-hover:text-white">palette</span>
                                 </div>
                             </div>
                             <div className="flex flex-col gap-6">
@@ -53,10 +53,10 @@ export default function Shop() {
                                 </button>
                             </div>
                         </div>
-                        <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 hover:border-slate-300 dark:hover:border-white/20 flex flex-col rounded-3xl p-8 transition-all">
+                        <div className="border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/40 hover:bg-slate-50 dark:hover:bg-slate-900 flex flex-col rounded-3xl p-8 transition-all group">
                             <div className="mb-8 flex justify-center">
-                                <div className="size-24 rounded-2xl flex items-center justify-center relative bg-primary/10 border border-primary/20">
-                                    <span className="material-symbols-outlined text-5xl text-primary opacity-80">psychology</span>
+                                <div className="size-24 rounded-2xl flex items-center justify-center relative bg-primary/10 border border-primary/20 group-hover:bg-primary group-hover:text-white transition-all">
+                                    <span className="material-symbols-outlined text-5xl text-primary opacity-80 group-hover:text-white">psychology</span>
                                 </div>
                             </div>
                             <div className="flex flex-col gap-6">
@@ -92,10 +92,10 @@ export default function Shop() {
                                 </button>
                             </div>
                         </div>
-                        <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 hover:border-slate-300 dark:hover:border-white/20 flex flex-col rounded-3xl p-8 transition-all">
+                        <div className="border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/40 hover:bg-slate-50 dark:hover:bg-slate-900 flex flex-col rounded-3xl p-8 transition-all group">
                             <div className="mb-8 flex justify-center">
-                                <div className="size-24 rounded-2xl flex items-center justify-center relative bg-primary/10 border border-primary/20">
-                                    <span className="material-symbols-outlined text-5xl text-primary opacity-80">movie_edit</span>
+                                <div className="size-24 rounded-2xl flex items-center justify-center relative bg-primary/10 border border-primary/20 group-hover:bg-primary group-hover:text-white transition-all">
+                                    <span className="material-symbols-outlined text-5xl text-primary opacity-80 group-hover:text-white">movie_edit</span>
                                 </div>
                             </div>
                             <div className="flex flex-col gap-6">

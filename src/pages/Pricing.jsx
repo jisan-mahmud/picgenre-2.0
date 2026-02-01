@@ -15,7 +15,7 @@ export default function Pricing() {
             </section>
             <section className="py-12 px-6">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div className="flex flex-col p-8 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-slate-800 relative hover:border-slate-300 dark:hover:border-white/20 transition-colors">
+                    <div className="flex flex-col p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/40 relative hover:bg-slate-50 dark:hover:bg-slate-900 transition-all">
                         <div className="mb-8">
                             <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-white">Free</h3>
                             <p className="text-slate-600 dark:text-slate-400 text-sm">Perfect for hobbyists and experimentation.</p>
@@ -46,7 +46,7 @@ export default function Pricing() {
                             Start for Free
                         </button>
                     </div>
-                    <div className="flex flex-col p-8 rounded-2xl border-2 border-primary bg-white dark:bg-slate-800 relative shadow-2xl shadow-primary/10">
+                    <div className="flex flex-col p-8 rounded-2xl border-2 border-primary bg-white dark:bg-slate-900/40 relative shadow-2xl shadow-primary/10">
                         <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full">
                             Most Popular
                         </div>
@@ -84,7 +84,7 @@ export default function Pricing() {
                             Get Started with Pro
                         </button>
                     </div>
-                    <div className="flex flex-col p-8 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-slate-800 relative hover:border-slate-300 dark:hover:border-white/20 transition-colors">
+                    <div className="flex flex-col p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/40 relative hover:bg-slate-50 dark:hover:bg-slate-900 transition-all">
                         <div className="mb-8">
                             <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-white">Enterprise</h3>
                             <p className="text-slate-600 dark:text-slate-400 text-sm">Scalable infrastructure for large teams.</p>
@@ -124,19 +124,19 @@ export default function Pricing() {
                 <div className="max-w-3xl mx-auto">
                     <h2 className="text-3xl font-black mb-12 text-center text-slate-900 dark:text-white">Frequently Asked Questions</h2>
                     <div className="space-y-6">
-                        <div className="p-6 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10">
+                        <div className="p-6 rounded-xl bg-slate-50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800">
                             <h4 className="font-bold mb-2 text-slate-900 dark:text-white">Can I switch plans anytime?</h4>
                             <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Yes, you can upgrade or downgrade your plan at any time from your account settings. Changes take effect immediately.</p>
                         </div>
-                        <div className="p-6 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10">
+                        <div className="p-6 rounded-xl bg-slate-50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800">
                             <h4 className="font-bold mb-2 text-slate-900 dark:text-white">What is "priority processing"?</h4>
                             <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Pro and Enterprise users get assigned to dedicated high-performance GPU nodes, ensuring their files are processed before free users during peak times.</p>
                         </div>
-                        <div className="p-6 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10">
+                        <div className="p-6 rounded-xl bg-slate-50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800">
                             <h4 className="font-bold mb-2 text-slate-900 dark:text-white">Do you offer API access?</h4>
                             <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">API access is available on our Pro plan for standard usage and on Enterprise for high-volume needs. Check our documentation for more details.</p>
                         </div>
-                        <div className="p-6 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10">
+                        <div className="p-6 rounded-xl bg-slate-50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800">
                             <h4 className="font-bold mb-2 text-slate-900 dark:text-white">Is there a limit on file size?</h4>
                             <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Free users can upload up to 50MB per file. Pro and Enterprise users can upload files up to 1GB in size.</p>
                         </div>
