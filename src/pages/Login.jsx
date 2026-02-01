@@ -10,8 +10,8 @@ export default function Login() {
             <header className="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
                 <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                        <div className="size-8 text-primary flex items-center justify-center">
-                            <span className="material-symbols-outlined text-3xl">database</span>
+                        <div className="size-8 flex items-center justify-center">
+                            <img src="/icon.png" alt="Picgenre Logo" className="w-8 h-8 object-contain" />
                         </div>
                         <Link to="/" className="text-xl font-bold tracking-tight">Picgenre</Link>
                     </div>
@@ -32,11 +32,11 @@ export default function Login() {
                     <div className="px-8 pt-12 pb-14 flex flex-col items-center">
                         <div className="mb-6">
                             <div className="size-16 bg-primary/10 dark:bg-primary/20 rounded-2xl flex items-center justify-center border border-primary/20 dark:border-primary/30">
-                                <span className="material-symbols-outlined text-primary text-4xl">database</span>
+                                <img src="/icon.png" alt="Picgenre Logo" className="w-8 h-8 object-contain" />
                             </div>
                         </div>
                         <h1 className="text-slate-900 dark:text-slate-100 tracking-tight text-3xl font-bold leading-tight text-center pb-2">
-                            Welcome to MetaForge
+                            Welcome to Picgenre
                         </h1>
                         <p className="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal pb-10 text-center max-w-75">
                             Sign in to generate perfect metadata with AI
