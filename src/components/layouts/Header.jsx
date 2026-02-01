@@ -16,7 +16,7 @@ export default function Header() {
                     <nav className="hidden md:flex items-center gap-8">
                         <a className="text-sm font-medium hover:text-primary transition-colors" href="#">Features</a>
                         <a className="text-sm font-medium hover:text-primary transition-colors" href="#">Documentation</a>
-                        <a className="text-sm font-medium hover:text-primary transition-colors" href="#">Pricing</a>
+                        <Link to="/pricing" className="text-sm font-medium hover:text-primary transition-colors">Pricing</Link>
                         <a className="text-sm font-medium hover:text-primary transition-colors" href="#">Changelog</a>
                     </nav>
                     <div className="flex items-center gap-3">

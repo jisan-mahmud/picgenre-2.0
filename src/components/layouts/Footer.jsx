@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -46,7 +47,7 @@ export default function Footer() {
                                 <ul className="space-y-2">
                                     <li><a className="text-sm text-slate-500 hover:text-primary transition-colors" href="#">About</a></li>
                                     <li><a className="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Blog</a></li>
-                                    <li><a className="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Privacy</a></li>
+                                    <li><Link className="text-sm text-slate-500 hover:text-primary transition-colors" to="/privacy-policy">Privacy</Link></li>
                                 </ul>
                             </div>
                         </div>

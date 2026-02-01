@@ -1,7 +1,16 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { Link, Outlet, useLocation } from 'react-router-dom'
 
 export default function SettingsLayout() {
+    const location = useLocation();
+    
+    const isActive = (path) => {
+        if (path === '/settings') {
+            return location.pathname === '/settings' || location.pathname === '/settings/';
+        }
+        return location.pathname === path;
+    };
+
     return (
         <div className="min-h-screen bg-background-light dark:bg-background-dark">
             <div className="flex flex-col lg:flex-row max-w-7xl mx-auto w-full">
@@ -12,22 +21,38 @@ export default function SettingsLayout() {
                             <p className="text-slate-500 dark:text-[#9296c9] text-xs font-normal leading-normal">Manage your configuration</p>
                         </div>
                         <div className="flex flex-row lg:flex-col gap-1 overflow-x-auto lg:overflow-x-visible">
-                            <a className="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 dark:bg-[#232648] text-primary dark:text-white whitespace-nowrap" href="#">
+                            <Link to="/settings" className={`flex items-center gap-3 px-3 py-2 rounded-lg whitespace-nowrap transition-colors ${
+                                isActive('/settings') 
+                                    ? 'bg-primary/10 dark:bg-[#232648] text-primary dark:text-white' 
+                                    : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-white/5'
+                            }`}>
                                 <span className="material-symbols-outlined text-[20px]">settings</span>
                                 <p className="text-sm font-medium">General</p>
-                            </a>
-                            <a className="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-white/5 transition-colors whitespace-nowrap" href="#">
+                            </Link>
+                            <Link to="/settings/ai-models" className={`flex items-center gap-3 px-3 py-2 rounded-lg whitespace-nowrap transition-colors ${
+                                isActive('/settings/ai-models') 
+                                    ? 'bg-primary/10 dark:bg-[#232648] text-primary dark:text-white' 
+                                    : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-white/5'
+                            }`}>
                                 <span className="material-symbols-outlined text-[20px]">memory</span>
                                 <p className="text-sm font-medium">Groq AI Settings</p>
-                            </a>
-                            <a className="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-white/5 transition-colors whitespace-nowrap" href="#">
+                            </Link>
+                            <Link to="/settings/history" className={`flex items-center gap-3 px-3 py-2 rounded-lg whitespace-nowrap transition-colors ${
+                                isActive('/settings/history') 
+                                    ? 'bg-primary/10 dark:bg-[#232648] text-primary dark:text-white' 
+                                    : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-white/5'
+                            }`}>
                                 <span className="material-symbols-outlined text-[20px]">history</span>
                                 <p className="text-sm font-medium">History</p>
-                            </a>
-                            <a className="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-white/5 transition-colors whitespace-nowrap" href="#">
+                            </Link>
+                            <Link to="/settings/billing-plan" className={`flex items-center gap-3 px-3 py-2 rounded-lg whitespace-nowrap transition-colors ${
+                                isActive('/settings/billing-plan') 
+                                    ? 'bg-primary/10 dark:bg-[#232648] text-primary dark:text-white' 
+                                    : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-white/5'
+                            }`}>
                                 <span className="material-symbols-outlined text-[20px]">credit_card</span>
                                 <p className="text-sm font-medium">Billing & Plan</p>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="px-4 hidden lg:block">
