@@ -6,46 +6,11 @@ export default function Home() {
 
     return (
         <div>
-            {/* Top Navigation Bar */}
-            <header className="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
-                <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-                    <div className="flex items-center gap-2 group cursor-pointer">
-                        <div className="bg-primary p-1.5 rounded-lg flex items-center justify-center">
-                            <span className="material-symbols-outlined text-white text-xl">database</span>
-                        </div>
-                        <h2 className="text-xl font-bold tracking-tight">MetaForge</h2>
-                    </div>
-                    <nav className="hidden md:flex items-center gap-8">
-                        <a className="text-sm font-medium hover:text-primary transition-colors" href="#">Features</a>
-                        <a className="text-sm font-medium hover:text-primary transition-colors" href="#">Documentation</a>
-                        <a className="text-sm font-medium hover:text-primary transition-colors" href="#">Pricing</a>
-                        <a className="text-sm font-medium hover:text-primary transition-colors" href="#">Changelog</a>
-                    </nav>
-                    <div className="flex items-center gap-3">
-                        <button 
-                            onClick={toggleTheme}
-                            className="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors"
-                            aria-label="Toggle theme"
-                        >
-                            <span className="material-symbols-outlined text-xl">
-                                {theme === 'dark' ? 'light_mode' : 'dark_mode'}
-                            </span>
-                        </button>
-                        <button className="hidden sm:flex text-sm font-semibold px-4 py-2 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
-                            Sign In
-                        </button>
-                        <button className="bg-primary text-white text-sm font-bold px-5 py-2 rounded-lg hover:bg-blue-700 transition-all flex items-center gap-2">
-                            <span className="material-symbols-outlined text-sm">rocket_launch</span>
-                            Get Started
-                        </button>
-                    </div>
-                </div>
-            </header>
             <main>
                 {/* Hero Section  */}
                 <section className="relative pt-20 pb-16 px-6 overflow-hidden">
                     {/* Decorative Glow */}
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/10 blur-[120px] rounded-full -z-10"></div>
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-200 h-100 bg-primary/10 blur-[120px] rounded-full -z-10"></div>
                     <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold mb-6">
                             <span className="relative flex h-2 w-2">
@@ -61,11 +26,11 @@ export default function Home() {
                             MetaForge uses advanced AI to analyze Images, SVGs, and Docs, creating SEO-ready and developer-friendly metadata in seconds.
                         </p>
                         <div className="flex flex-col sm:flex-row items-center gap-4 w-full justify-center">
-                            <button className="w-full sm:w-auto flex items-center justify-center gap-2 min-w-[200px] h-14 rounded-xl bg-primary text-white text-lg font-bold shadow-lg shadow-primary/20 hover:scale-[1.02] transition-transform">
+                            <button className="w-full sm:w-auto flex items-center justify-center gap-2 min-w-50 h-14 rounded-xl bg-primary text-white text-lg font-bold shadow-lg shadow-primary/20 hover:scale-[1.02] transition-transform">
                                 <span className="material-symbols-outlined">upload_file</span>
                                 Upload Files
                             </button>
-                            <button className="w-full sm:w-auto flex items-center justify-center gap-2 min-w-[200px] h-14 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-lg font-bold hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
+                            <button className="w-full sm:w-auto flex items-center justify-center gap-2 min-w-50 h-14 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-lg font-bold hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
                                 <span className="material-symbols-outlined">bolt</span>
                                 Try with Sample
                             </button>
@@ -196,63 +161,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                {/* Footer */}
-                <footer className="mt-24 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0a0b16] py-16 px-6">
-                    <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12">
-                        <div className="space-y-6 max-w-xs">
-                            <div className="flex items-center gap-2">
-                                <div className="bg-primary p-1 rounded-lg">
-                                    <span className="material-symbols-outlined text-white text-lg">database</span>
-                                </div>
-                                <h2 className="text-lg font-bold">MetaForge</h2>
-                            </div>
-                            <p className="text-sm text-slate-500 leading-relaxed">
-                                The ultimate AI-powered companion for digital asset management and SEO automation.
-                            </p>
-                            <div className="flex gap-4">
-                                <a className="w-10 h-10 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:text-primary transition-colors" href="#">
-                                    <span className="material-symbols-outlined text-xl">share</span>
-                                </a>
-                                <a className="w-10 h-10 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:text-primary transition-colors" href="#">
-                                    <span className="material-symbols-outlined text-xl">rss_feed</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 md:gap-20">
-                            <div className="space-y-4">
-                                <h4 className="text-sm font-bold uppercase tracking-wider">Product</h4>
-                                <ul className="space-y-2">
-                                    <li><a className="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Features</a></li>
-                                    <li><a className="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Integrations</a></li>
-                                    <li><a className="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Pricing</a></li>
-                                </ul>
-                            </div>
-                            <div className="space-y-4">
-                                <h4 className="text-sm font-bold uppercase tracking-wider">Resources</h4>
-                                <ul className="space-y-2">
-                                    <li><a className="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Documentation</a></li>
-                                    <li><a className="text-sm text-slate-500 hover:text-primary transition-colors" href="#">API Reference</a></li>
-                                    <li><a className="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Status</a></li>
-                                </ul>
-                            </div>
-                            <div className="space-y-4">
-                                <h4 className="text-sm font-bold uppercase tracking-wider">Company</h4>
-                                <ul className="space-y-2">
-                                    <li><a className="text-sm text-slate-500 hover:text-primary transition-colors" href="#">About</a></li>
-                                    <li><a className="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Blog</a></li>
-                                    <li><a className="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Privacy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-slate-100 dark:border-slate-800/50 flex flex-col sm:flex-row justify-between items-center gap-4">
-                        <p className="text-xs text-slate-500">© 2024 MetaForge AI Inc. All rights reserved.</p>
-                        <div className="flex items-center gap-4">
-                            <span className="material-symbols-outlined text-xs text-emerald-500">check_circle</span>
-                            <p className="text-[10px] text-slate-500 uppercase tracking-widest font-bold">All systems operational</p>
-                        </div>
-                    </div>
-                </footer>
+                
             </main>
         </div>
     );

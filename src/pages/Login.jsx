@@ -1,30 +1,33 @@
 import React from 'react'
 import { useTheme } from '../hooks/useTheme'
+import { Link } from 'react-router-dom';
 
 export default function Login() {
     const { theme, toggleTheme } = useTheme();
 
     return (
         <div className='h-screen bg-background-light dark:bg-background-dark flex flex-col'>
-            <header className="flex items-center justify-between whitespace-nowrap border-b border-slate-200/20 dark:border-slate-800/50 px-6 md:px-10 py-4 w-full">
-                <div className="flex items-center gap-3">
-                    <div className="size-8 text-primary flex items-center justify-center">
-                        <span className="material-symbols-outlined text-3xl">database</span>
+            <header className="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+                <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                        <div className="size-8 text-primary flex items-center justify-center">
+                            <span className="material-symbols-outlined text-3xl">database</span>
+                        </div>
+                        <Link to="/" className="text-xl font-bold tracking-tight">Picgenre</Link>
                     </div>
-                    <h2 className="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight tracking-tight">MetaForge</h2>
+                    <button 
+                        onClick={toggleTheme}
+                        className="p-2 rounded-lg hover:bg-slate-200/20 dark:hover:bg-slate-800/50 transition-colors"
+                        aria-label="Toggle theme"
+                    >
+                        <span className="material-symbols-outlined text-xl text-slate-900 dark:text-slate-100">
+                            {theme === 'dark' ? 'light_mode' : 'dark_mode'}
+                        </span>
+                    </button>
                 </div>
-                <button 
-                    onClick={toggleTheme}
-                    className="p-2 rounded-lg hover:bg-slate-200/20 dark:hover:bg-slate-800/50 transition-colors"
-                    aria-label="Toggle theme"
-                >
-                    <span className="material-symbols-outlined text-xl text-slate-900 dark:text-slate-100">
-                        {theme === 'dark' ? 'light_mode' : 'dark_mode'}
-                    </span>
-                </button>
             </header>
             <main className="flex-1 flex items-center justify-center p-4">
-                <div className="auth-card w-full max-w-[440px] bg-white dark:bg-slate-900/80 rounded-xl border border-slate-200 dark:border-slate-800/60 overflow-hidden shadow-lg dark:shadow-2xl dark:shadow-black/20">
+                <div className="auth-card w-full max-w-110 bg-white dark:bg-slate-900/80 rounded-xl border border-slate-200 dark:border-slate-800/60 overflow-hidden shadow-lg dark:shadow-2xl dark:shadow-black/20">
                     <div className="w-full h-1 bg-primary"></div>
                     <div className="px-8 pt-12 pb-14 flex flex-col items-center">
                         <div className="mb-6">
@@ -35,7 +38,7 @@ export default function Login() {
                         <h1 className="text-slate-900 dark:text-slate-100 tracking-tight text-3xl font-bold leading-tight text-center pb-2">
                             Welcome to MetaForge
                         </h1>
-                        <p className="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal pb-10 text-center max-w-[300px]">
+                        <p className="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal pb-10 text-center max-w-75">
                             Sign in to generate perfect metadata with AI
                         </p>
                         <div className="w-full flex justify-center py-2">
