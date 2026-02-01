@@ -15,14 +15,14 @@ export default function Pricing() {
             </section>
             <section className="py-12 px-6">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div className="flex flex-col p-8 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-card-dark relative hover:border-slate-300 dark:hover:border-white/20 transition-colors">
+                    <div className="flex flex-col p-8 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-slate-800 relative hover:border-slate-300 dark:hover:border-white/20 transition-colors">
                         <div className="mb-8">
                             <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-white">Free</h3>
                             <p className="text-slate-600 dark:text-slate-400 text-sm">Perfect for hobbyists and experimentation.</p>
                         </div>
                         <div className="mb-8">
                             <span className="text-4xl font-black text-slate-900 dark:text-white">$0</span>
-                            <span className="text-slate-500">/mo</span>
+                            <span className="text-slate-500 dark:text-slate-400">/mo</span>
                         </div>
                         <ul className="space-y-4 mb-12 flex-1">
                             <li className="flex items-center gap-3 text-sm text-slate-700 dark:text-slate-300">
@@ -37,7 +37,7 @@ export default function Pricing() {
                                 <span className="material-symbols-outlined text-primary text-lg">check_circle</span>
                                 <span>Basic metadata generation</span>
                             </li>
-                            <li className="flex items-center gap-3 text-sm text-slate-500">
+                            <li className="flex items-center gap-3 text-sm text-slate-500 dark:text-slate-400">
                                 <span className="material-symbols-outlined text-lg">cancel</span>
                                 <span>No API access</span>
                             </li>
@@ -46,7 +46,7 @@ export default function Pricing() {
                             Start for Free
                         </button>
                     </div>
-                    <div className="flex flex-col p-8 rounded-2xl border-2 border-primary bg-white dark:bg-card-dark relative shadow-2xl shadow-primary/10">
+                    <div className="flex flex-col p-8 rounded-2xl border-2 border-primary bg-white dark:bg-slate-800 relative shadow-2xl shadow-primary/10">
                         <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full">
                             Most Popular
                         </div>
@@ -56,7 +56,7 @@ export default function Pricing() {
                         </div>
                         <div className="mb-8">
                             <span className="text-4xl font-black text-slate-900 dark:text-white">$29</span>
-                            <span className="text-slate-500">/mo</span>
+                            <span className="text-slate-500 dark:text-slate-400">/mo</span>
                         </div>
                         <ul className="space-y-4 mb-12 flex-1">
                             <li className="flex items-center gap-3 text-sm">
@@ -84,7 +84,7 @@ export default function Pricing() {
                             Get Started with Pro
                         </button>
                     </div>
-                    <div className="flex flex-col p-8 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-card-dark relative hover:border-slate-300 dark:hover:border-white/20 transition-colors">
+                    <div className="flex flex-col p-8 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-slate-800 relative hover:border-slate-300 dark:hover:border-white/20 transition-colors">
                         <div className="mb-8">
                             <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-white">Enterprise</h3>
                             <p className="text-slate-600 dark:text-slate-400 text-sm">Scalable infrastructure for large teams.</p>

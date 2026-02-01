@@ -4,7 +4,7 @@ export default function Shop() {
     return (
         <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white">
             <main className="flex flex-1 flex-col items-center">
-                <div className="w-full max-w-[1200px] px-6 lg:px-10 py-16 flex flex-col gap-16">
+                <div className="w-full max-w-300 px-6 lg:px-10 py-16 flex flex-col gap-16">
                     <div className="flex flex-col gap-4 text-center">
                         <p className="text-slate-900 dark:text-white text-4xl md:text-6xl font-black leading-tight tracking-tight">
                             API Subscription Packs
@@ -14,7 +14,7 @@ export default function Shop() {
                         </p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div className="bg-white/50 dark:bg-white/5 border border-slate-200 dark:border-white/10 hover:border-slate-300 dark:hover:border-white/20 flex flex-col rounded-3xl p-8 transition-all">
+                        <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 hover:border-slate-300 dark:hover:border-white/20 flex flex-col rounded-3xl p-8 transition-all">
                             <div className="mb-8 flex justify-center">
                                 <div className="size-24 rounded-2xl flex items-center justify-center relative bg-primary/10 border border-primary/20">
                                     <span className="material-symbols-outlined text-5xl text-primary opacity-80">palette</span>
@@ -53,7 +53,7 @@ export default function Shop() {
                                 </button>
                             </div>
                         </div>
-                        <div className="bg-white/50 dark:bg-white/5 border border-slate-200 dark:border-white/10 hover:border-slate-300 dark:hover:border-white/20 flex flex-col rounded-3xl p-8 transition-all">
+                        <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 hover:border-slate-300 dark:hover:border-white/20 flex flex-col rounded-3xl p-8 transition-all">
                             <div className="mb-8 flex justify-center">
                                 <div className="size-24 rounded-2xl flex items-center justify-center relative bg-primary/10 border border-primary/20">
                                     <span className="material-symbols-outlined text-5xl text-primary opacity-80">psychology</span>
@@ -92,7 +92,7 @@ export default function Shop() {
                                 </button>
                             </div>
                         </div>
-                        <div className="bg-white/50 dark:bg-white/5 border border-slate-200 dark:border-white/10 hover:border-slate-300 dark:hover:border-white/20 flex flex-col rounded-3xl p-8 transition-all">
+                        <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 hover:border-slate-300 dark:hover:border-white/20 flex flex-col rounded-3xl p-8 transition-all">
                             <div className="mb-8 flex justify-center">
                                 <div className="size-24 rounded-2xl flex items-center justify-center relative bg-primary/10 border border-primary/20">
                                     <span className="material-symbols-outlined text-5xl text-primary opacity-80">movie_edit</span>
