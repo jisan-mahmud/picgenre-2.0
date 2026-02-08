@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { CloudUpload } from 'lucide-react'
 import UploadAssets from '../components/workspace/UploadAssets'
 import FileQueue from '../components/workspace/FileQueue'
 import ProcessedFile from '../components/workspace/ProcessedFile'
@@ -71,7 +72,7 @@ export default function Workspace() {
                         <div className="lg:col-span-7 flex flex-col gap-8">
                             <div className="flex flex-col gap-3">
                                 <div className="flex items-center gap-2 mb-1">
-                                    <span className="material-symbols-outlined text-primary">cloud_upload</span>
+                                    <CloudUpload className="w-5 h-5 text-primary" />
                                     <h3 className="text-slate-900 dark:text-white text-lg font-bold font-display">Upload Assets</h3>
                                 </div>
                                 <UploadAssets onUpload={handleUpload}/>

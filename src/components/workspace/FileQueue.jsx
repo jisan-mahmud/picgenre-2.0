@@ -1,4 +1,5 @@
 import React from 'react'
+import { Clock, FileText, Trash2 } from 'lucide-react'
 
 export default function FileQueue({ files = [], onRemove }) {
     const getFileType = (filename) => {
@@ -20,7 +21,7 @@ export default function FileQueue({ files = [], onRemove }) {
         <div className="bg-white dark:bg-slate-900/40 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden">
             <div className="px-6 py-4 border-b border-slate-200 dark:border-slate-800 flex justify-between items-center">
                 <div className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-slate-400">pending_actions</span>
+                    <Clock className="w-5 h-5 text-slate-400" />
                     <h3 className="text-slate-900 dark:text-white text-lg font-bold font-display">Remaining Queue ({files.length})</h3>
                 </div>
                 <span className="text-xs font-bold text-slate-400">{files.length > 0 ? 'Processing...' : 'Empty'}</span>
@@ -50,7 +51,7 @@ export default function FileQueue({ files = [], onRemove }) {
                                                 {preview ? (
                                                     <img src={preview} alt={file.name} className="w-full h-full object-cover" />
                                                 ) : (
-                                                    <span className="material-symbols-outlined text-slate-400">description</span>
+                                                    <FileText className="w-6 h-6 text-slate-400" />
                                                 )}
                                             </div>
                                         </td>
@@ -60,7 +61,7 @@ export default function FileQueue({ files = [], onRemove }) {
                                         </td>
                                         <td className="px-6 py-4 text-right">
                                             <button onClick={() => onRemove?.(index)} className="text-slate-400 hover:text-red-500 transition-colors">
-                                                <span className="material-symbols-outlined text-lg">delete</span>
+                                                <Trash2 className="w-5 h-5" />
                                             </button>
                                         </td>
                                     </tr>

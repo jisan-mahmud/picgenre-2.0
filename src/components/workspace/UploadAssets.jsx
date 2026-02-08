@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import { UploadCloud } from 'lucide-react'
 
 export default function UploadAssets({ onUpload }) {
     const [isDragging, setIsDragging] = useState(false)
@@ -46,7 +47,7 @@ export default function UploadAssets({ onUpload }) {
                 className="hidden"
             />
             <div className="size-16 rounded-full bg-primary/5 dark:bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-                <span className="material-symbols-outlined text-4xl">upload_file</span>
+                <UploadCloud className="w-10 h-10" />
             </div>
             <div className="text-center">
                 <p className="text-slate-900 dark:text-white font-bold">Drag and drop files here</p>

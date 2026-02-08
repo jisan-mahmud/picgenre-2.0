@@ -1,4 +1,5 @@
 import React from 'react'
+import { Diamond, Users, Camera, HelpCircle, Info, StopCircle, Sparkles } from 'lucide-react'
 
 export default function SideBar({ queueCount, processedCount = 0, totalCount = 0, onGenerate, onStop, isProcessing }) {
     const progress = totalCount > 0 ? Math.round((processedCount / totalCount) * 100) : 0
@@ -26,15 +27,15 @@ export default function SideBar({ queueCount, processedCount = 0, totalCount = 0
                         <label className="text-slate-700 dark:text-slate-300 text-sm font-bold uppercase tracking-wider">Target Platform</label>
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                             <button className="flex flex-col items-center gap-2 p-4 rounded-xl border transition-all bg-white dark:bg-slate-900/40 border-primary text-primary dark:text-white ring-2 ring-primary/20 shadow-md">
-                                <span className="material-symbols-outlined text-2xl">diamond</span>
+                                <Diamond className="w-6 h-6" />
                                 <span className="text-[11px] font-bold uppercase tracking-tight text-center">Adobe Stock</span>
                             </button>
                             <button className="flex flex-col items-center gap-2 p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900 text-slate-500 hover:border-primary/50 hover:text-primary dark:hover:text-white transition-all">
-                                <span className="material-symbols-outlined text-2xl">diversity_2</span>
+                                <Users className="w-6 h-6" />
                                 <span className="text-[11px] font-bold uppercase tracking-tight text-center">Freepik</span>
                             </button>
                             <button className="flex flex-col items-center gap-2 p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900 text-slate-500 hover:border-primary/50 hover:text-primary dark:hover:text-white transition-all">
-                                <span className="material-symbols-outlined text-2xl">photo_camera</span>
+                                <Camera className="w-6 h-6" />
                                 <span className="text-[11px] font-bold uppercase tracking-tight text-center">Shutterstock</span>
                             </button>
                         </div>
@@ -42,13 +43,13 @@ export default function SideBar({ queueCount, processedCount = 0, totalCount = 0
                     <div className="flex flex-col gap-3">
                         <div className="flex items-center justify-between">
                             <label className="text-slate-700 dark:text-slate-300 text-sm font-bold uppercase tracking-wider">Custom Instructions</label>
-                            <span className="material-symbols-outlined text-slate-400 text-sm">help_outline</span>
+                            <HelpCircle className="w-4 h-4 text-slate-400" />
                         </div>
                         <textarea className="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg p-3 text-sm text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 focus:ring-2 focus:ring-primary focus:border-transparent transition-all min-h-25 resize-none" placeholder="Add custom context, keywords, or specific style guides for the AI..."></textarea>
                     </div>
                     <div className="flex flex-col gap-3 p-4 bg-primary/5 dark:bg-primary/10 rounded-lg border border-primary/10">
                         <div className="flex gap-3 items-start">
-                            <span className="material-symbols-outlined text-primary text-xl">info</span>
+                            <Info className="w-5 h-5 text-primary" />
                             <div className="flex flex-col gap-1">
                                 <p className="text-slate-900 dark:text-white text-xs font-bold leading-tight">AI Analysis Enabled</p>
                                 <p className="text-slate-500 dark:text-slate-400 text-[10px] leading-relaxed">System is auto-detecting themes and generating platform-specific metadata for remaining queue items.</p>
@@ -59,12 +60,12 @@ export default function SideBar({ queueCount, processedCount = 0, totalCount = 0
                 <div className="flex flex-col gap-3 pt-4 border-t border-slate-100 dark:border-slate-900/40">
                     {isProcessing ? (
                         <button onClick={onStop} className="w-full h-14 bg-red-500 text-white text-base font-black rounded-lg shadow-xl shadow-red-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 uppercase tracking-widest">
-                            <span className="material-symbols-outlined">stop_circle</span>
+                            <StopCircle className="w-5 h-5" />
                             Stop Processing
                         </button>
                     ) : (
                         <button onClick={onGenerate} disabled={queueCount === 0} className="w-full h-14 bg-primary text-white text-base font-black rounded-lg shadow-xl shadow-primary/30 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 uppercase tracking-widest disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100">
-                            <span className="material-symbols-outlined">auto_awesome</span>
+                            <Sparkles className="w-5 h-5" />
                             Generate Metadata
                         </button>
                     )}
